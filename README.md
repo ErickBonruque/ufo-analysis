@@ -5,13 +5,13 @@
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Identificar padrões **temporais, geográficos e contextuais** associados ao aumento de relatos de UFOs, e avaliar a influência de fatores externos conhecidos — clima, proximidade de aeroportos, lançamentos espaciais e interesse cultural — sobre esses avistamentos.
 
 **Pergunta orientadora:** *Quando e onde os relatos de UFO aparecem com maior intensidade, e quais fatores externos ajudam a explicar esses picos?*
 
-## 🧱 Arquitetura — Esquema Estrela
+## Arquitetura — Esquema Estrela
 
 A modelagem segue um esquema estrela clássico, com uma única tabela fato no centro e dimensões descritivas conectadas a ela.
 
@@ -49,7 +49,7 @@ A modelagem segue um esquema estrela clássico, com uma única tabela fato no ce
 > O diagrama completo, com chaves primárias, estrangeiras e cardinalidades, está em [`docs/modelo_estrela.png`](docs/modelo_estrela.png).
 > O dicionário de dados detalhado está em [`docs/dicionario_dados.md`](docs/dicionario_dados.md).
 
-## 🗂️ Fontes de Dados
+## Fontes de Dados
 
 | Fonte | Tipo | Uso no DW |
 |---|---|---|
@@ -62,7 +62,7 @@ A modelagem segue um esquema estrela clássico, com uma única tabela fato no ce
 | [GEIPAN/CNES](https://www.cnes-geipan.fr/en/recherche/cas) | CSV | casos oficiais franceses |
 | [Hugging Face — Ufo_data_clustered](https://huggingface.co/datasets/cjc0013/Ufo_data_clustered) | JSONL | fonte complementar |
 
-## 🧰 Stack Tecnológica
+## Stack Tecnológica
 
 - **Python 3.11+** — orquestração e ETL
 - **DuckDB** — engine analítica local (SQL, colunar, sem servidor)
@@ -71,7 +71,7 @@ A modelagem segue um esquema estrela clássico, com uma única tabela fato no ce
 - **requests** — chamadas às APIs externas
 - **Jupyter** — notebooks exploratórios
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 ufo-dw/
@@ -113,7 +113,7 @@ ufo-dw/
     └── decisoes_modelagem.md
 ```
 
-## 🚀 Como Executar
+## Como Executar
 
 ```bash
 # 1. Clonar e entrar no projeto
@@ -137,7 +137,7 @@ python scripts/run_all.py
 
 Para um passo a passo detalhado de cada etapa (download → transformação → modelo físico → carga → validação), consultar [`GUIA_IMPLEMENTACAO.md`](GUIA_IMPLEMENTACAO.md).
 
-## 📊 Entregas do Projeto
+## Entregas do Projeto
 
 | Etapa | Descrição | Status |
 |---|---|---|
